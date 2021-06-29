@@ -215,7 +215,7 @@ void UserInterface::runConsole()
 	string option;
 	while (true) {
 		this->PrintMenu();
-		cout << "Alegeti optiunea: ";
+		cout << "Choose an option: ";
 		cin >> option;
 		if (option == "x")break;
 		else if (option == "addA") {
