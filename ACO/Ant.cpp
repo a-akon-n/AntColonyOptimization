@@ -117,6 +117,6 @@ bool Ant::operator==(const Ant& a)
 
 ostream& operator<<(ostream& os, const Ant& a)
 {
-	os << "Furnica: " << a.id << " | Start: " << a.start << " | Pozitie: " << a.position << " | Feromoni: " << a.Pheromone;
+	os << "Ant: " << a.id << " | Start: " << a.start << " | Position: " << a.position << " | Pheromons: " << a.Pheromone;
 	return os;
 }
