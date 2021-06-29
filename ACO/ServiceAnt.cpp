@@ -33,6 +33,7 @@ void ServiceAnt::deleteAnt(int id) throw(MyException)
 			id = i;
 			break;
 		}
+		i--;
 	}
 	if (this->repoAnt.find(this->repoAnt.getElem(id)) == -1) {
 		throw MyException("Produsul nu se poate sterge deoarece nu exista! \n");
