@@ -140,6 +140,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ACO.cpp" />
+    <ClCompile Include="Ant.cpp" />
+    <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="ServiceAnt.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ant.h" />
+    <ClInclude Include="Graph.h" />
+    <ClInclude Include="MyException.h" />
+    <ClInclude Include="ServiceAnt.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
