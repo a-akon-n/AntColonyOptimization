@@ -27,6 +27,13 @@ void ServiceAnt::addAnt(int id, int start, int position, double pheromone, vecto
 
 void ServiceAnt::deleteAnt(int id) throw(MyException)
 {
+	int i = this->repoAnt.getDimRepo();
+	while (i != 0) {
+		if (this->repoAnt.getElem(i).getID() == id) {
+			id = i;
+			break;
+		}
+	}
 	if (this->repoAnt.find(this->repoAnt.getElem(id)) == -1) {
 		throw MyException("Produsul nu se poate sterge deoarece nu exista! \n");
 	}
